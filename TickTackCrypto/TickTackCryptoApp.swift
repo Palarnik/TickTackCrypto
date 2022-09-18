@@ -11,7 +11,11 @@ import SwiftUI
 struct TickTackCryptoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if let url =  URLBuilder.build(base: .bitfinex, path: .tickers, query: [.symbols: [.tBTCUSD,.tETHUSD, .tLTCUSD,.tXRPUSD,.tDSHUSD,.tRRTUSD,.tEOSUSD,.tSANUSD,.tDATUSD,.tSNTUSD,.tDOGEUSD,.tLUNAUSD,.tMATICUSD,.tNEXOUSD,.tOCEANUSD,.tBESTUSD,.tAAVEUSD,.tPLUUSD,.tFILUSD]]) {
+                TickerListView(viewModel: TickerListViewModel(fetcher: NetworkFetcher(url: url), timerScheduler: Timer.self))
+            } else {
+                TickerListView(viewModel: TickerListViewModel(fetcher: MockFetcher(response: Data(base64Encoded: MockFetcher.MockResponse.errorResponse.rawValue) ?? Data()), timerScheduler: Timer.self))
+            }
         }
     }
 }

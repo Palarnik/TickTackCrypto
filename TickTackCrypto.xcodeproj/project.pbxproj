@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC22B38628D79FA4001A2317 /* TickTackCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22B38528D79FA4001A2317 /* TickTackCryptoTests.swift */; };
+		BC680F3628D798A300083A9C /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F3528D798A300083A9C /* Fetcher.swift */; };
+		BC680F3828D798B400083A9C /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F3728D798B400083A9C /* Parsable.swift */; };
+		BC680F3B28D798D400083A9C /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F3A28D798D400083A9C /* Ticker.swift */; };
+		BC680F3D28D79A3600083A9C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F3C28D79A3600083A9C /* Parser.swift */; };
+		BC680F3F28D79A5000083A9C /* MockFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F3E28D79A5000083A9C /* MockFetcher.swift */; };
+		BC680F4128D79A6800083A9C /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F4028D79A6800083A9C /* URLBuilder.swift */; };
+		BC680F4328D79A8300083A9C /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F4228D79A8300083A9C /* NetworkFetcher.swift */; };
+		BC680F4528D79A9400083A9C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F4428D79A9400083A9C /* NetworkError.swift */; };
+		BC680F4728D79AAF00083A9C /* ParsableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F4628D79AAF00083A9C /* ParsableError.swift */; };
+		BC680F4928D79AC000083A9C /* MockTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F4828D79AC000083A9C /* MockTimer.swift */; };
+		BC680F4C28D79AF400083A9C /* TickerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F4B28D79AF400083A9C /* TickerListView.swift */; };
+		BC680F4E28D79B1C00083A9C /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F4D28D79B1C00083A9C /* CellView.swift */; };
+		BC680F5128D79B4700083A9C /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F5028D79B4700083A9C /* CellViewModel.swift */; };
+		BC680F5328D79B6300083A9C /* TickerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F5228D79B6300083A9C /* TickerListViewModel.swift */; };
+		BC680F5628D79D4200083A9C /* TickerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F5528D79D4200083A9C /* TickerListViewModelTests.swift */; };
+		BC680F5828D79D7800083A9C /* CellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F5728D79D7800083A9C /* CellViewModelTests.swift */; };
+		BC680F5A28D79D9D00083A9C /* URLBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F5928D79D9D00083A9C /* URLBuilderTests.swift */; };
+		BC680F5C28D79DC300083A9C /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC680F5B28D79DC300083A9C /* ParserTests.swift */; };
 		BC6AFB8A28D7966E00FC76D5 /* TickTackCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6AFB8928D7966E00FC76D5 /* TickTackCryptoApp.swift */; };
-		BC6AFB8C28D7966E00FC76D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6AFB8B28D7966E00FC76D5 /* ContentView.swift */; };
 		BC6AFB8E28D7967000FC76D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6AFB8D28D7967000FC76D5 /* Assets.xcassets */; };
 		BC6AFB9128D7967000FC76D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6AFB9028D7967000FC76D5 /* Preview Assets.xcassets */; };
-		BC6AFB9B28D7967000FC76D5 /* TickTackCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6AFB9A28D7967000FC76D5 /* TickTackCryptoTests.swift */; };
 		BC6AFBA528D7967000FC76D5 /* TickTackCryptoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6AFBA428D7967000FC76D5 /* TickTackCryptoUITests.swift */; };
 		BC6AFBA728D7967000FC76D5 /* TickTackCryptoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6AFBA628D7967000FC76D5 /* TickTackCryptoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -34,13 +51,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC22B38528D79FA4001A2317 /* TickTackCryptoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickTackCryptoTests.swift; sourceTree = "<group>"; };
+		BC680F3528D798A300083A9C /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		BC680F3728D798B400083A9C /* Parsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		BC680F3A28D798D400083A9C /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		BC680F3C28D79A3600083A9C /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		BC680F3E28D79A5000083A9C /* MockFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetcher.swift; sourceTree = "<group>"; };
+		BC680F4028D79A6800083A9C /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		BC680F4228D79A8300083A9C /* NetworkFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
+		BC680F4428D79A9400083A9C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BC680F4628D79AAF00083A9C /* ParsableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableError.swift; sourceTree = "<group>"; };
+		BC680F4828D79AC000083A9C /* MockTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimer.swift; sourceTree = "<group>"; };
+		BC680F4B28D79AF400083A9C /* TickerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListView.swift; sourceTree = "<group>"; };
+		BC680F4D28D79B1C00083A9C /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		BC680F5028D79B4700083A9C /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		BC680F5228D79B6300083A9C /* TickerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListViewModel.swift; sourceTree = "<group>"; };
+		BC680F5528D79D4200083A9C /* TickerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListViewModelTests.swift; sourceTree = "<group>"; };
+		BC680F5728D79D7800083A9C /* CellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelTests.swift; sourceTree = "<group>"; };
+		BC680F5928D79D9D00083A9C /* URLBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderTests.swift; sourceTree = "<group>"; };
+		BC680F5B28D79DC300083A9C /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
 		BC6AFB8628D7966E00FC76D5 /* TickTackCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTackCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6AFB8928D7966E00FC76D5 /* TickTackCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackCryptoApp.swift; sourceTree = "<group>"; };
-		BC6AFB8B28D7966E00FC76D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC6AFB8D28D7967000FC76D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC6AFB9028D7967000FC76D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC6AFB9628D7967000FC76D5 /* TickTackCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTackCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC6AFB9A28D7967000FC76D5 /* TickTackCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackCryptoTests.swift; sourceTree = "<group>"; };
 		BC6AFBA028D7967000FC76D5 /* TickTackCryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTackCryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6AFBA428D7967000FC76D5 /* TickTackCryptoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackCryptoUITests.swift; sourceTree = "<group>"; };
 		BC6AFBA628D7967000FC76D5 /* TickTackCryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTackCryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -71,6 +105,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC680F3428D7988F00083A9C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BC680F3528D798A300083A9C /* Fetcher.swift */,
+				BC680F3728D798B400083A9C /* Parsable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BC680F3928D798C000083A9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC680F3A28D798D400083A9C /* Ticker.swift */,
+				BC680F3C28D79A3600083A9C /* Parser.swift */,
+				BC680F3E28D79A5000083A9C /* MockFetcher.swift */,
+				BC680F4028D79A6800083A9C /* URLBuilder.swift */,
+				BC680F4228D79A8300083A9C /* NetworkFetcher.swift */,
+				BC680F4428D79A9400083A9C /* NetworkError.swift */,
+				BC680F4628D79AAF00083A9C /* ParsableError.swift */,
+				BC680F4828D79AC000083A9C /* MockTimer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC680F4A28D79ADA00083A9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC680F4B28D79AF400083A9C /* TickerListView.swift */,
+				BC680F4D28D79B1C00083A9C /* CellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC680F4F28D79B3100083A9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC680F5028D79B4700083A9C /* CellViewModel.swift */,
+				BC680F5228D79B6300083A9C /* TickerListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BC6AFB7D28D7966D00FC76D5 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +170,11 @@
 		BC6AFB8828D7966E00FC76D5 /* TickTackCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				BC680F3428D7988F00083A9C /* Protocol */,
+				BC680F3928D798C000083A9C /* Model */,
+				BC680F4A28D79ADA00083A9C /* View */,
+				BC680F4F28D79B3100083A9C /* ViewModel */,
 				BC6AFB8928D7966E00FC76D5 /* TickTackCryptoApp.swift */,
-				BC6AFB8B28D7966E00FC76D5 /* ContentView.swift */,
 				BC6AFB8D28D7967000FC76D5 /* Assets.xcassets */,
 				BC6AFB8F28D7967000FC76D5 /* Preview Content */,
 			);
@@ -113,7 +192,11 @@
 		BC6AFB9928D7967000FC76D5 /* TickTackCryptoTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC6AFB9A28D7967000FC76D5 /* TickTackCryptoTests.swift */,
+				BC680F5528D79D4200083A9C /* TickerListViewModelTests.swift */,
+				BC22B38528D79FA4001A2317 /* TickTackCryptoTests.swift */,
+				BC680F5728D79D7800083A9C /* CellViewModelTests.swift */,
+				BC680F5928D79D9D00083A9C /* URLBuilderTests.swift */,
+				BC680F5B28D79DC300083A9C /* ParserTests.swift */,
 			);
 			path = TickTackCryptoTests;
 			sourceTree = "<group>";
@@ -198,6 +281,7 @@
 					};
 					BC6AFB9528D7967000FC76D5 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 						TestTargetID = BC6AFB8528D7966E00FC76D5;
 					};
 					BC6AFB9F28D7967000FC76D5 = {
@@ -257,8 +341,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6AFB8C28D7966E00FC76D5 /* ContentView.swift in Sources */,
+				BC680F4C28D79AF400083A9C /* TickerListView.swift in Sources */,
 				BC6AFB8A28D7966E00FC76D5 /* TickTackCryptoApp.swift in Sources */,
+				BC680F4128D79A6800083A9C /* URLBuilder.swift in Sources */,
+				BC680F4328D79A8300083A9C /* NetworkFetcher.swift in Sources */,
+				BC680F4928D79AC000083A9C /* MockTimer.swift in Sources */,
+				BC680F3B28D798D400083A9C /* Ticker.swift in Sources */,
+				BC680F4728D79AAF00083A9C /* ParsableError.swift in Sources */,
+				BC680F3628D798A300083A9C /* Fetcher.swift in Sources */,
+				BC680F3F28D79A5000083A9C /* MockFetcher.swift in Sources */,
+				BC680F4E28D79B1C00083A9C /* CellView.swift in Sources */,
+				BC680F5128D79B4700083A9C /* CellViewModel.swift in Sources */,
+				BC680F4528D79A9400083A9C /* NetworkError.swift in Sources */,
+				BC680F5328D79B6300083A9C /* TickerListViewModel.swift in Sources */,
+				BC680F3D28D79A3600083A9C /* Parser.swift in Sources */,
+				BC680F3828D798B400083A9C /* Parsable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6AFB9B28D7967000FC76D5 /* TickTackCryptoTests.swift in Sources */,
+				BC680F5C28D79DC300083A9C /* ParserTests.swift in Sources */,
+				BC680F5828D79D7800083A9C /* CellViewModelTests.swift in Sources */,
+				BC22B38628D79FA4001A2317 /* TickTackCryptoTests.swift in Sources */,
+				BC680F5A28D79D9D00083A9C /* URLBuilderTests.swift in Sources */,
+				BC680F5628D79D4200083A9C /* TickerListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,15 +573,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NPUZ94XZWQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maciejmejer.TickTackCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickTackCrypto.app/TickTackCrypto";
@@ -492,11 +600,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NPUZ94XZWQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maciejmejer.TickTackCryptoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
