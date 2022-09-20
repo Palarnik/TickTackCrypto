@@ -33,21 +33,15 @@ import Foundation
         })
     }
     
-    private nonisolated func fetchTickers() async {
+    private func fetchTickers() async {
         do {
             let data = try await fetcher.fetch()
             let array = try Parser.parse(to: Ticker.self, from: data)
-            
-            await MainActor.run(body: {
-                tickerArray = array
-                filteredTickerArray = isArrayFiltered ? tickerArray.filter({ a in filteredTickerArray.contains(where: { b in a.name == b.name })}) : tickerArray
-                if errorAppeared { errorAppeared = false }
-            })
-            
+            tickerArray = array
+            filteredTickerArray = isArrayFiltered ? tickerArray.filter({ a in filteredTickerArray.contains(where: { b in a.name == b.name })}) : tickerArray
+            if errorAppeared { errorAppeared = false }
         } catch {
-            await MainActor.run(body: {
-                errorAppeared = true
-            })
+            errorAppeared = true
         }
     }
     

@@ -8,7 +8,9 @@
 import Foundation
 enum Parser {
     static func parse<T>(to type: T.Type, from data: Data) throws -> [T] where T: Parsable {
-        let decodedArray = try (JSONSerialization.jsonObject(with: data) as! [[Any]]) //TODO: Fix this force
+        guard let decodedArray = try (JSONSerialization.jsonObject(with: data) as? [[Any]]) else {
+           throw ParsableError.unexpectedValueType("Could not decode to [[Any]]")
+        }
         var array = [T]()
         for element in decodedArray {
             array.append(try T.parse(from: element))

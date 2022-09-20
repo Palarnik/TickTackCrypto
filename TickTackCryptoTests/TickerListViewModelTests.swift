@@ -21,7 +21,6 @@ class TickerListViewModelTests: XCTestCase {
         cancellables = Set<AnyCancellable>()
     }
     
-    //TODO: Check error handling
     func testReceivingError() async {
         let testExpectation = expectation(description: "Wait for error")
         mockFetcher.response = Data(base64Encoded: MockFetcher.MockResponse.errorResponse.rawValue) ?? Data()

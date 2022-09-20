@@ -33,7 +33,7 @@ extension Ticker: Parsable {
         
         guard let change = array[6] as? Double else { throw ParsableError.unexpectedValueType("DAILY_CHANGE_RELATIVE") }
         
-        guard let value = array[7] as? Double else { throw ParsableError.unexpectedValueType("LAST_PRICE") } //TODO: Make sure this is the correct value
+        guard let value = array[7] as? Double else { throw ParsableError.unexpectedValueType("LAST_PRICE") }
         
         return Self.init(name: name, value: value, change: change)
     }
